@@ -25,10 +25,10 @@ A suite of command line tools
 
 Basic Workflow
 --------------
-Get a list of visible wifi access points
-Filter this list to the ones we're willing to associate with
-Lookup which one we haven't seen in the longest
-Connect via wifi
-Start rsync over ssh
-Disconnect
-Repeat
+*Get a list of visible wifi access points
+*Filter this list to the ones we're willing to associate with
+*Lookup which one we haven't seen in the longest
+*Connect via wifi
+*Start rsync over ssh
+*Disconnect
+*Repeat
