@@ -14,3 +14,11 @@ would need two wifi radios, one for camera to system, and one between systems. W
 Hardware
 --------
 I am basing this on small Linux based single board computers, such as the Beaglebone Black and the ubiquitous Raspberry Pi. Radios will be USB dongles.
+
+Software
+--------
+A suite of command line tools
+* ssh to authenticate
+* rsync to actually move the bits
+* sqlite to keep track of the sessions
+* iw tools and other wireless tools
