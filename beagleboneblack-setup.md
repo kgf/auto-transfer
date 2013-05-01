@@ -1,0 +1,1 @@
+The Beaglebone Black is the successor to the BeagleBone. It is faster, has double the RAM, and is half the cost. It has addon cards called capes, similar to the Arduino shields. It runs a Linux distribution.

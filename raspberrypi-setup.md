@@ -18,3 +18,4 @@ These also pull in
 * crda
 
 However, when I run iw list, it reports nl80211 not found. This is with an Edimax wifi dongle
+One of the big challenges is that there are lists showing which dongles work with the Pi et al, but not which ones work with the Pi AND support Access Point (AP) mode.
