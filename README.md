@@ -13,7 +13,10 @@ would need two wifi radios, one for camera to system, and one between systems. W
 
 Hardware
 --------
-I am basing this on small Linux based single board computers, such as the Beaglebone Black and the ubiquitous Raspberry Pi. Radios will be USB dongles.
+I am basing this on small Linux based single board computers, such as the Beaglebone Black and the ubiquitous Raspberry Pi. I have two Pis for testing, and I just received a Beaglebone Black. I was delighted to 
+see that it was made in the USA ! 
+Radios will be USB dongles. Even within the USB dongles there are a  lot of choices. I am currently looking at the Netis line of cards, as they list Linux as a supported operating system. This means that the internal 
+chipset is less likely to change to something Linux doesn't like. 
 
 Software
 --------
