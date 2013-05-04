@@ -26,6 +26,11 @@ A suite of command line tools
 * sqlite to keep track of the sessions
 * iw tools and other wireless tools
 
+Useful Commands
+---------------
+* lsusb and lsusb -v show many details about the wifi adapters
+* iw
+
 Basic Workflow
 --------------
 * Get a list of visible wifi access points
