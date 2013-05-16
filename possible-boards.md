@@ -8,10 +8,11 @@ Has a great community, and is even cheaper at $25 for the model A or $35 for the
 
 Cubieboard
 ==========
+Seems to be over-proced and under-powered
 
 ODROID-U2
 =========
- is quite a bit more powerful, but more expensive
+Quite a bit more powerful, but more expensive
 
 Udoo
 ====
@@ -23,5 +24,8 @@ Has wireless built-in. Vaporware, might not be powerful enough
 
 Jeenode
 =======
-Not powerful enough, but still interesting
+Not powerful enough, but still interesting, $25
 
+Wandboard
+=========
+Available, not much info, maybe more than is needed.
