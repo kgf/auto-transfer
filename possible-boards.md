@@ -12,7 +12,11 @@ Seems to be over-proced and under-powered
 
 ODROID-U2
 =========
-Quite a bit more powerful, but more expensive
+Quite a bit more powerful, but more expensive at $89, and a long lead time
+
+ODROID-X2
+=========
+Same power as the ODROID-U2, but more IO ports, such as audio. Also, more money at $135 and weeks of lead time.
 
 Udoo
 ====
