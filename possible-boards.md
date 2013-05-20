@@ -4,7 +4,8 @@ Current frontrunner, $45 for a full computer, including HDMI output. It  include
 
 Raspberry Pi 
 ===============
-Has a great community, and is even cheaper at $25 for the model A or $35 for the model B. We would only need the model A, since network would be wifi
+Has a great community, and is even cheaper at $25 for the model A or $35 for the model B. We would only need the model A, since network would be wifi. One big advantage with this board is that it has an available camera 
+module, which could make the entire photo gathering process automatic.
 
 Cubieboard
 ==========
