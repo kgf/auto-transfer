@@ -25,6 +25,7 @@ A suite of command line tools
 * rsync to actually move the bits
 * sqlite to keep track of the sessions
 * iw tools and other wireless tools
+* possibly Ruby since everything looks like a nail
 
 Useful Commands
 ---------------
