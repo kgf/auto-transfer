@@ -4,5 +4,5 @@
 #http://blog.jayfields.com/2006/06/ruby-kernel-system-exec-and-x.html
 #We'll be using the result = %x(rsync) format
 
-rsync_result = %x(rsync)
+rsync_results = %x[rsync 2>&1]
 puts "Results were: #{rsync_result}"
