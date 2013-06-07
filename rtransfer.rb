@@ -5,4 +5,5 @@
 #We'll be using the result = %x(rsync) format
 
 rsync_results = %x[rsync 2>&1]
+scan_results = %x[iwlist wlan0 scanning 2>&1]
 puts "Results were: #{rsync_result}"
