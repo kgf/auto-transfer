@@ -18,6 +18,31 @@ see that it was made in the USA !
 Radios will be USB dongles. Even within the USB dongles there are a lot of choices. I am currently looking at the Netis line of cards, as they list Linux as a supported operating system. This means that the internal 
 chipset is less likely to change to something Linux doesn't like. 
 
+Quick start for Raspberry Pi (rev b)
+------------------------------------
+
+Suggested hardware pre-reqs, after purchasing Raspberry Pi:
+* Powered USB hub
+* USB keyboard, USB mouse
+* USB wifi card.  Currently trying to standardize on Netis WF2503
+* MicroUSB charger to power unit
+* HDMI cable (plus monitor or TV to plug into)
+* Case (Raspberry PI OEM cases seem to work fine)
+* SDHC sdcard
+
+Suggested guides to getting started:
+* initial hardware setup: http://elinux.org/RPi_Hardware_Basic_Setup
+* initial SD card: http://elinux.org/RPi_Easy_SD_Card_Setup
+
+Notes from initial bootup after getting SD card configured:
+* Make sure all USB devices are plugged in prior to booting up, plug and play won't work
+* Make sure SD card is mounted underneath PI
+* Make sure HDMI video is plugged in
+* Plug in micro USB power cord, it will automatically turn on PI
+* First screen you get is the "software configuration tool"
+  * Only works with keyboard, not mouse
+  * Good first step: expand file system
+
 Software
 --------
 A suite of command line tools
