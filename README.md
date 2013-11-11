@@ -52,7 +52,6 @@ Sub workflow: Grabbing images from the camera
 ```
 import subprocess
 import os
-
 os.chdir("~")
 myMAC = open('/sys/class/net/eth0/address').read()
 if !os.path.exists(myMAC) mkdir myMAC
