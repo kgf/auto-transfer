@@ -66,3 +66,14 @@ Basic Workflow
 * Start rsync over ssh
 * Disconnect
 * Repeat
+
+Sub workflow: Grabbing images from the camera
+--------------
+* Consider use of gphoto2 (available from apt-get)
+ * sudo apt-get install gphoto2
+* Pseudo code to grab all photos from connected camera
+ * Store current wifi mac address as normalized string variable
+ * If missing, create directory to store photos, using normalized wifi mac address
+ * cd ./macaddress
+ * gphoto2 --get-all-files --force-overwrite > last-download.log
+ * cd ~
