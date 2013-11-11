@@ -41,3 +41,39 @@ Basic Workflow
 * Start rsync over ssh
 * Disconnect
 * Repeat
+* 
+
+Sub workflow: Grabbing images from the camera
+---------------------------------------------
+* Consider use of gphoto2 (available from apt-get)
+  * sudo apt-get install gphoto2
+
+* Pseudo python code to grab all photos from connected camera:
+```
+import subprocess
+import os
+
+os.chdir("~")
+myMAC = open('/sys/class/net/eth0/address').read()
+if !os.path.exists(myMAC) mkdir myMAC
+os.chdir("./myMAC")
+subprocess.call("gphoto2 --get-all-files --force-overwrite > last-download.log")
+os.chdir("cd ~")
+```
+
+Sub workflow: Initializing the ad-hoc network
+---------------------------------------------
+In etc/network/interfaces:
+```
+# Common settings for all devices
+auto wlan0
+allow-hotplug wlan0
+iface wlan0 inet static
+wireless-essid "BEMAPI"
+wireless-channel 1                
+wireless-mode ad-hoc
+wireless-ap 11:5F:02:38:5C:45     
+netmask 255.255.255.0
+# Unique setting needed for each PI
+address 192.168.10.1              
+```
