@@ -68,22 +68,50 @@ Basic Workflow
 * Repeat
 * 
 
-Sub workflow: Grabbing images from the camera
----------------------------------------------
-* Consider use of gphoto2 (available from apt-get)
-  * sudo apt-get install gphoto2
+Data structures: File directories
+----------------------------
+* Base directory is off of user home directory
+* Base directory name, by default, is "autotransfer"
+* Subdirectories in autotransfer contain images from each pi, including the local one
+* Subdirectories are named using a scrubbed version of the ethernet mac address for every pi
+* Within each subdirectory, the image directory file structure from the camera will be reflected.
+* This same directory structure is used on all pi devices running autotransfer
+* Example, given 2 pi's (one local, one remote)
 
-* Pseudo python code to grab all photos from connected camera:
-```
-import subprocess
-import os
-os.chdir("~")
-myMAC = open('/sys/class/net/eth0/address').read()
-if !os.path.exists(myMAC) mkdir myMAC
-os.chdir("./myMAC")
-subprocess.call("gphoto2 --get-all-files --force-overwrite > last-download.log")
-os.chdir("cd ~")
-```
+'''
+/usr/home/pi
+	./autotransfer
+		./F0xDExF1x52xA7x98 (local pi)
+			./dcim
+				./camera
+					20131021_132059.jpg
+					20131021_132559.jpg
+					20131021_133059.jpg
+					20131021_133559.jpg
+				./video
+					20131017_101529.mp4
+		./A0x88xB4x1DxOFxFC (remote pi)
+			./dcim
+				./camera
+					20131021_100530.jpg
+					20131021_200510.jpg
+'''
+				
+Data structures: Tracking last sync with remote pis
+---------------------------------------------------
+
+TBD
+
+Sub workflow: Grabbing images from the local camera
+---------------------------------------------------
+* see camera-get.py
+* Proposed flow:
+	* Change to user home directory
+	* Make if missing, change to autotransfer subdirectory
+	* Make if missing, change to uniquely named subdirectory
+	* Execute gphoto2 to get all images from attached camera device, recurse through directories
+	* Change back to user home directory
+
 
 Sub workflow: Initializing the ad-hoc network
 ---------------------------------------------
