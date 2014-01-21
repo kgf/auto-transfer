@@ -100,7 +100,23 @@ Data structures: File directories
 Data structures: Tracking last sync with remote pis
 ---------------------------------------------------
 
-TBD
+*expecting to use rsyncd / rsync here
+
+Example /etc/rsyncd.conf:
+
+'''
+[bema]
+	path = /home/pi/autotransfer
+	auth users = bema
+	transfer logging = true
+	secrets file = /etc/rsyncd.secrets
+	strict modes = false
+'''
+
+* we'll want to run rsync as a cron job (every 60 seconds?)
+* what if they both start transferring at the same time?
+	* we need a lockout algorithm to avoid cross sync
+
 
 Sub workflow: Grabbing images from the local camera
 ---------------------------------------------------
