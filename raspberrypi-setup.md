@@ -1,6 +1,7 @@
 To get started with setting up your Raspberry Pi with Ruby, you’re going to need a few things:
 
 1. Unpackage your Pi and the rest of the goodies, making sure not to transfer any electrostatic shock to the device -- a big no-no that could fry the device and make it worth slightly more than your next coolest desk toy. 
+
 2. [Format the SD card](https://www.sdcard.org/downloads/formatter_4/) using another computer with an SD drive (internal or external). 
 
 3. Meanwhile, download NOOBs (new out of box software) and sidestep the shame as you walk through the door…
@@ -45,7 +46,7 @@ To get started with setting up your Raspberry Pi with Ruby, you’re going to ne
   # Last login: Tue Jan 21 21:46:57 2014 from new-host-4.home
   # pi@raspberrypi ~ $
   ```
-
+  
 9. Install Ruby
 
   ```shell
@@ -73,6 +74,5 @@ To get started with setting up your Raspberry Pi with Ruby, you’re going to ne
 References:
 
 [RaspberryPi.org Quick Start Guide](http://www.raspberrypi.org/wp-content/uploads/2012/04/quick-start-guide-v2_1.pdf)
-
 [RPi Ruby on Rails](http://elinux.org/RPi_Ruby_on_Rails)
 
