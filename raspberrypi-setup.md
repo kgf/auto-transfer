@@ -15,10 +15,10 @@ To get started with setting up your Raspberry Pi with Ruby, you’re going to ne
 sudo raspi-config
 ```
 
-..* Select (4) Internationalization Options 
-..* Select (3) Keyboard Layout
-..* Select enter
-..* Navigate to English (US) which is on the next page
+  * Select (4) Internationalization Options 
+  * Select (3) Keyboard Layout
+  * Select enter
+  * Navigate to English (US) which is on the next page
 
 7. Setup Wifi on the Pi
 
