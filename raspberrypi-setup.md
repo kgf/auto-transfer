@@ -16,9 +16,11 @@ sudo raspi-config
 ```
 
 Select (4) Internationalization Options 
+
 Select (3) Keyboard Layout
 
 Hit <enter>
+
 Navigate to English (US) which is on the next page
 
 7. Setup Wifi on the Pi
@@ -72,6 +74,7 @@ And there you have it -- you’re running Ruby (and Rails if you so wish) on you
 ```
 
 References:
+
 [RaspberryPi.org Quick Start Guide](http://www.raspberrypi.org/wp-content/uploads/2012/04/quick-start-guide-v2_1.pdf)
 
 [RPi Ruby on Rails](http://elinux.org/RPi_Ruby_on_Rails)
