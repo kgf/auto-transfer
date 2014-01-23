@@ -11,9 +11,9 @@ To get started with setting up your Raspberry Pi with Ruby, you’re going to ne
 
 6. Once Raspbian’s good to go, you’re going to want to make sure your keyboard is set to a US locale (assuming you’re, of course, in the US), as the default is the UK -- a fact which makes it a bit pesky to setup wifi configs among other things.
 
-```shell
-sudo raspi-config
-```
+  ```shell
+  sudo raspi-config
+  ```
 
   * Select (4) Internationalization Options 
   * Select (3) Keyboard Layout
