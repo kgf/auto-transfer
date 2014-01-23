@@ -74,5 +74,6 @@ To get started with setting up your Raspberry Pi with Ruby, you’re going to ne
 References:
 
 [RaspberryPi.org Quick Start Guide](http://www.raspberrypi.org/wp-content/uploads/2012/04/quick-start-guide-v2_1.pdf)
+
 [RPi Ruby on Rails](http://elinux.org/RPi_Ruby_on_Rails)
 
