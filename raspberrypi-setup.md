@@ -17,6 +17,7 @@ sudo raspi-config
 
 Select (4) Internationalization Options 
 Select (3) Keyboard Layout
+
 Hit <enter>
 Navigate to English (US) which is on the next page
 
