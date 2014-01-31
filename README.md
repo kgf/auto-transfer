@@ -131,17 +131,19 @@ Sub workflow: Grabbing images from the local camera
 
 Sub workflow: Initializing the ad-hoc network
 ---------------------------------------------
-In etc/network/interfaces:
+In etc/network/interfaces, this will configure the wifi card in ad-hoc mode. Some notes
+* This was successful with both the Netis WF2503 wifi card, and my Edimax EW-7811UN mini-USB wifi card
+* ip address needs to be unique: we'll need to coordinate somehow across devices
+* wireless-ap can be any arbitrary MAC value apparently, but MUST be the same across all devices
+* wireless-essid can be anything we want, but MUST be the same across all devices
+* I chose channel 1 since it's within the ham radio band range apparently, good for in-line amplifiers!
 ```
-# Common settings for all devices
-auto wlan0
 allow-hotplug wlan0
 iface wlan0 inet static
-wireless-essid "BEMAPI"
-wireless-channel 1                
+wireless-essid BEMAPI
+wireless-channel 1
 wireless-mode ad-hoc
-wireless-ap 11:5F:02:38:5C:45     
+wireless-ap 00:11:22:33:44:55
 netmask 255.255.255.0
-# Unique setting needed for each PI
-address 192.168.10.1              
+address 192.168.10.1
 ```
